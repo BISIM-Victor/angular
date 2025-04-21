@@ -1,0 +1,37 @@
+<h2 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem;">Crear Usuario</h2>
+
+<form method="POST" action="https://support-production-0fd1.up.railway.app/perfiles" style="display: flex; flex-direction: column; gap: 1rem;">
+
+  <input type="text" name="usuario" placeholder="Usuario" required />
+
+  <input type="text" name="nomUsuario" placeholder="Nombre" required />
+
+  <input type="text" name="apUsuario" placeholder="Apellido Paterno" required />
+
+  <input type="text" name="amUsuario" placeholder="Apellido Materno" required />
+
+  <input type="text" name="extencion" placeholder="Extensión" />
+
+  <input type="text" name="oficina" placeholder="Oficina" />
+
+  <input type="password" name="secret" placeholder="Contraseña" required />
+
+
+  <select name="estatus" required>
+    <option value="1">Activo</option>
+    <option value="0">Inactivo</option>
+  </select>
+
+  <input type="datetime-local" name="lastCon" />
+
+  <input type="datetime-local" name="lastSecretChange" />
+
+  <input type="number" name="secretChange" placeholder="Secret Change" />
+
+  <input type="number" name="secretPolicy" placeholder="Secret Policy" />
+
+  <button type="submit" style="background-color: #2563eb; color: white; padding: 0.5rem 1rem; border-radius: 0.375rem;">
+    Crear Usuario
+  </button>
+
+</form>
