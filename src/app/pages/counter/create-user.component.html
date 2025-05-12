@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>usuarios</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Usuarios</title>
   <style>
     body {
       margin: 0;
@@ -12,7 +12,7 @@
       color: #333;
       display: flex;
       flex-direction: column;
-      min-height: 100vh; /* Asegura que el body ocupe toda la altura */
+      min-height: 100vh;
     }
 
     .respaldo-section {
@@ -22,7 +22,7 @@
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       margin: 2rem;
-      flex: 1; /* El contenido ocupa el espacio disponible */
+      flex: 1;
     }
 
     .respaldo-section h2 {
@@ -36,15 +36,59 @@
       margin-bottom: 1.5rem;
     }
 
-    .respaldo-section img {
+    .image-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 50px;
+      flex-wrap: wrap;
+    }
+
+    .section-image {
+      width: 600px;
       max-width: 100%;
       height: auto;
+      object-fit: cover;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    /* Estilos para el footer */
-  .footer {
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .respaldo-section h2 {
+        font-size: 2rem;
+      }
+
+      .respaldo-section p {
+        font-size: 1rem;
+      }
+
+      .respaldo-section {
+        padding: 2rem 1rem;
+        margin: 1rem;
+      }
+
+      .section-image {
+        width: 250px;
+      }
+
+      .footer {
+        padding: 2rem 1rem;
+      }
+
+      .social-icon {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .section-image {
+        width: 100%;
+      }
+    }
+
+    /* Footer styles */
+    .footer {
       background: linear-gradient(135deg, #264653, #397078);
       color: #fff;
       padding: 4rem 1rem;
@@ -83,77 +127,18 @@
       color: #ffeb3b;
       transform: scale(1.2);
     }
-
-    @media (max-width: 768px) {
-      .main-section h2 {
-        font-size: 2rem;
-      }
-
-      .main-section p {
-        font-size: 1rem;
-      }
-
-      .main-section {
-        padding: 2rem 1rem;
-        margin: 1rem;
-      }
-
-      .footer {
-        padding: 2rem 1rem;
-      }
-
-      .social-icon {
-        font-size: 1.5rem;
-      }
-    }
-
-.respaldo-section {
-  text-align: center; /* Centra el texto */
-  padding: 20px;
-}
-
-.image-container {
-  display: flex;
-  justify-content: center; /* Centra las imágenes horizontalmente */
-  gap: 30px; /* Espacio entre las imágenes */
-  margin-top: 50px; /* Espacio arriba de las imágenes */
-  flex-wrap: wrap; /* Hace que las imágenes se ajusten en pantallas más pequeñas */
-}
-
-.section-image {
-  width: 600px; /* Tamaño más grande para las imágenes */
-  max-width: 100%; /* Asegura que las imágenes no se desborden */
-  height: auto; /* Mantiene la relación de aspecto */
-  object-fit: cover; /* Asegura que las imágenes se recorten correctamente si no se ajustan */
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-  .section-image {
-    width: 250px; /* Reducir tamaño de las imágenes en pantallas más pequeñas */
-  }
-}
-
-@media (max-width: 480px) {
-  .section-image {
-    width: 100%; /* Hacer las imágenes más grandes en pantallas muy pequeñas */
-  }
-}
-
-
   </style>
 </head>
 <body>
 
-<section class="respaldo-section">
-  <h2>Limpieza Interna, Respaldos, Actualizaciones y Formateos</h2>
-  <p>¡Cuidamos tu información y optimizamos tu equipo!</p>
-  <div class="image-container">
-    <img src="assets/images/limpieza.png" alt="Limpieza y respaldos" class="section-image">
-    <img src="assets/images/backup.png" alt="Respaldos" class="section-image">
-  </div>
-</section>
-
+  <section class="respaldo-section">
+    <h2>Limpieza Interna, Respaldos, Actualizaciones y Formateos</h2>
+    <p>¡Cuidamos tu información y optimizamos tu equipo!</p>
+    <div class="image-container">
+      <img src="assets/images/limpieza.png" alt="Limpieza y respaldos" class="section-image">
+      <img src="assets/images/backup.png" alt="Respaldos" class="section-image">
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="footer-content">
