@@ -4,10 +4,233 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>home</title>
+  <style>
+    /* Estilos generales */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0c0f1a url('https://www.transparenttextures.com/patterns/circuit-board.png'); /* Fondo tecnológico */
+      background-size: cover;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Esto asegura que el body ocupe toda la altura */
+    }
+
+    /* Sección principal */
+    .home-section {
+      text-align: center;
+      padding: 4rem 2rem;
+      flex: 1; /* El contenido principal ocupa el espacio disponible */
+    }
+
+    .home-section h1 {
+      font-size: 3rem;
+      color: #00e0ff;
+      text-shadow: 2px 2px #000;
+      margin-bottom: 0.5rem;
+    }
+
+    .home-section p {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+
+    .whatsapp-button {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background-color: #25D366;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.3rem;
+      padding: 0.8rem 1.8rem;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebe5b;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .home-section h1 {
+        font-size: 2rem; /* Ajustar tamaño del título en pantallas pequeñas */
+      }
+
+      .home-section p {
+        font-size: 1rem; /* Ajustar tamaño del texto en pantallas pequeñas */
+      }
+
+      .whatsapp-button {
+        font-size: 1.1rem;
+        padding: 0.7rem 1.5rem;
+      }
+    }
+
+    /* Estilos para el footer */
+ .footer {
+      background: linear-gradient(135deg, #264653, #397078);
+      color: #fff;
+      padding: 4rem 1rem;
+      text-align: center;
+      margin-top: auto;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+      font-family: 'Arial', sans-serif;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer p {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      font-weight: bold;
+    }
+
+    .social-icons {
+      margin-top: 1.5rem;
+    }
+
+    .social-icon {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 15px;
+      font-size: 2rem;
+      transition: color 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .social-icon:hover {
+      color: #ffeb3b;
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 768px) {
+      .main-section h2 {
+        font-size: 2rem;
+      }
+
+      .main-section p {
+        font-size: 1rem;
+      }
+
+      .main-section {
+        padding: 2rem 1rem;
+        margin: 1rem;
+      }
+
+      .footer {
+        padding: 2rem 1rem;
+      }
+
+      .social-icon {
+        font-size: 1.5rem;
+      }
+    }
+
+
+.home-section {
+  text-align: center;
+  padding: 60px 20px; /* Más espacio para que todo respire */
+  background-color: #f5f5f5; /* Fondo claro para mantener la coherencia */
+  color: #333; /* Texto oscuro para mayor contraste */
+  border-radius: 10px; /* Bordes suaves */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+  margin-top: 30px; /* Separación superior */
+}
+
+.home-section h1 {
+  font-size: 2.5rem; /* Título grande pero no tan agresivo */
+  font-weight: bold;
+  color: #00796b; /* Color principal similar a otros colores usados */
+  margin-bottom: 20px;
+}
+
+.home-section p {
+  font-size: 1.1rem;
+  color: #555; /* Gris suave para el texto */
+  margin-bottom: 20px; /* Espaciado entre párrafos */
+}
+
+.whatsapp-button {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 1.3rem;
+  background-color: #25d366; /* Verde de WhatsApp */
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra sutil */
+}
+
+.whatsapp-button:hover {
+  background-color: #128c7e; /* Cambia a un verde más oscuro */
+  transform: translateY(-4px); /* Ligero desplazamiento hacia arriba */
+}
+
+.whatsapp-button:active {
+  transform: translateY(2px); /* Efecto de presionar el botón */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .home-section h1 {
+    font-size: 2rem; /* Reducir tamaño de título */
+  }
+
+  .home-section p {
+    font-size: 1rem; /* Reducir tamaño de párrafos */
+  }
+
+  .whatsapp-button {
+    font-size: 1.2rem; /* Botón un poco más pequeño */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-section {
+    padding: 40px 15px; /* Menos espaciado en pantallas más pequeñas */
+  }
+
+  .home-section h1 {
+    font-size: 1.6rem; /* Reducir aún más el tamaño del título */
+  }
+
+  .whatsapp-button {
+    font-size: 1.1rem; /* Hacer el botón un poco más pequeño */
+  }
+}
+
+
+  </style>
 </head>
+
 <body>
-  <h1>home</h1>
-  <h1>Victor caballero</h1>
+  <section class="home-section">
+    <h1>Soluciones en Informática</h1>
+    <p>Ingenieria especializada</p>
+    <p>Solicita tu cotización vía WhatsApp:</p>
+    <a class="whatsapp-button" href="https://wa.me/5217131192549" target="_blank">📱 713 119 25 49</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Tu Empresa. Todos los derechos reservados.</p>
+      <div class="social-icons">
+        <a href="#" class="social-icon">Facebook</a>
+        <a href="#" class="social-icon">Twitter</a>
+        <a href="#" class="social-icon">Instagram</a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>

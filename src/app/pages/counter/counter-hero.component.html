@@ -1,2 +1,170 @@
-<h1>HEROES</h1>
-<h2>....</h2>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mantenimiento</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .main-section {
+      flex: 1;
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 2rem;
+    }
+
+    .main-section h2 {
+      font-size: 2.5rem;
+      color: #3f51b5;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .main-section p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      color: #555;
+    }
+
+    .main-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer {
+      background: linear-gradient(135deg, #264653, #397078);
+      color: #fff;
+      padding: 4rem 1rem;
+      text-align: center;
+      margin-top: auto;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+      font-family: 'Arial', sans-serif;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer p {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      font-weight: bold;
+    }
+
+    .social-icons {
+      margin-top: 1.5rem;
+    }
+
+    .social-icon {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 15px;
+      font-size: 2rem;
+      transition: color 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .social-icon:hover {
+      color: #ffeb3b;
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 768px) {
+      .main-section h2 {
+        font-size: 2rem;
+      }
+
+      .main-section p {
+        font-size: 1rem;
+      }
+
+      .main-section {
+        padding: 2rem 1rem;
+        margin: 1rem;
+      }
+
+      .footer {
+        padding: 2rem 1rem;
+      }
+
+      .social-icon {
+        font-size: 1.5rem;
+      }
+    }
+
+.main-section {
+  text-align: center; /* Centra el texto */
+  padding: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Centra la imagen horizontalmente */
+  margin-top: 50px; /* Espacio arriba de la imagen */
+}
+
+.section-image {
+  width: 600px; /* Tamaño más grande para la imagen */
+  max-width: 100%; /* Asegura que la imagen no se desborde */
+  height: auto; /* Mantiene la relación de aspecto */
+  object-fit: cover; /* Asegura que la imagen se recorte correctamente si no se ajusta */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .section-image {
+    width: 250px; /* Reducir tamaño de la imagen en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .section-image {
+    width: 100%; /* Hacer la imagen más grande en pantallas muy pequeñas */
+  }
+}
+
+
+
+  </style>
+</head>
+<body>
+
+<section class="main-section">
+  <h2>Mantenimiento</h2>
+  <p>Servicios preventivos y correctivos para mantener tu infraestructura en óptimas condiciones.</p>
+  <div class="image-container">
+    <img src="assets/images/lap-mantenimiento.png" alt="Mantenimiento" class="section-image">
+  </div>
+</section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Tu Empresa. Todos los derechos reservados.</p>
+      <div class="social-icons">
+        <a href="#" class="social-icon">Facebook</a>
+        <a href="#" class="social-icon">Twitter</a>
+        <a href="#" class="social-icon">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,25 +1,60 @@
 <style>
   nav {
     display: flex;
-    justify-content: space-around;
-    background-color: black;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #264653; /* Azul verdoso oscuro */
     color: white;
-    padding: 10px;
+    padding: 1rem 2rem;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
   }
-nav a {
-  color: white;
-  text-decoration: none;
-}
 
-nav a.active {
-  color: rgb(223, 20, 30);
-}
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+  }
+
+  nav a:hover {
+    color: #F4A261; /* Naranja suave */
+    border-bottom: 2px solid #F4A261;
+  }
+
+  nav a.active {
+    color: #E76F51; /* Rojo terracota */
+    border-bottom: 2px solid #E76F51;
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav a {
+      padding: 0.5rem 0;
+    }
+  }
+
 </style>
+
 
 <nav>
   <a routerLink="/" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">HOME</a>
-  <a [routerLink]="['/hero']" [routerLinkActive]="'active'">HEROES</a>
-  <a [routerLink]="['/usuarios']" [routerLinkActive]="'active'">USUARIOS</a>
-  <a [routerLink]="['/dragonball']" [routerLinkActive]="'active'">DRAGONBALL</a>
-  <a routerLink="/dragonball-super" routerLinkActive="active">DRAGONBALL SUPER</a>
+  <a [routerLink]="['/hero']" [routerLinkActive]="'active'">MANTENIMIENTO</a>
+  <a [routerLink]="['/usuarios']" [routerLinkActive]="'active'">LIMPIEZA Y RESPALDOS</a>
+  <a [routerLink]="['/dragonball']" [routerLinkActive]="'active'">CABLEADO ESTRUCTURADO</a>
+  <a routerLink="/dragonball-super" routerLinkActive="active">CIRCUITO CERRADO</a>
 </nav>
+
+
+
+
+
+
+

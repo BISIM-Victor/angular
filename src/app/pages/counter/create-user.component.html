@@ -1,37 +1,170 @@
-<h2 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem;">Crear Usuario</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>usuarios</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Asegura que el body ocupe toda la altura */
+    }
 
-<form method="POST" action="https://support-production-0fd1.up.railway.app/perfiles" style="display: flex; flex-direction: column; gap: 1rem;">
+    .respaldo-section {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 2rem;
+      flex: 1; /* El contenido ocupa el espacio disponible */
+    }
 
-  <input type="text" name="usuario" placeholder="Usuario" required />
+    .respaldo-section h2 {
+      font-size: 2.5rem;
+      color: #007BFF;
+      margin-bottom: 1rem;
+    }
 
-  <input type="text" name="nomUsuario" placeholder="Nombre" required />
+    .respaldo-section p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
 
-  <input type="text" name="apUsuario" placeholder="Apellido Paterno" required />
+    .respaldo-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-  <input type="text" name="amUsuario" placeholder="Apellido Materno" required />
+    /* Estilos para el footer */
+  .footer {
+      background: linear-gradient(135deg, #264653, #397078);
+      color: #fff;
+      padding: 4rem 1rem;
+      text-align: center;
+      margin-top: auto;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+      font-family: 'Arial', sans-serif;
+    }
 
-  <input type="text" name="extencion" placeholder="Extensión" />
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-  <input type="text" name="oficina" placeholder="Oficina" />
+    .footer p {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      font-weight: bold;
+    }
 
-  <input type="password" name="secret" placeholder="Contraseña" required />
+    .social-icons {
+      margin-top: 1.5rem;
+    }
+
+    .social-icon {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 15px;
+      font-size: 2rem;
+      transition: color 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .social-icon:hover {
+      color: #ffeb3b;
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 768px) {
+      .main-section h2 {
+        font-size: 2rem;
+      }
+
+      .main-section p {
+        font-size: 1rem;
+      }
+
+      .main-section {
+        padding: 2rem 1rem;
+        margin: 1rem;
+      }
+
+      .footer {
+        padding: 2rem 1rem;
+      }
+
+      .social-icon {
+        font-size: 1.5rem;
+      }
+    }
+
+.respaldo-section {
+  text-align: center; /* Centra el texto */
+  padding: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  gap: 30px; /* Espacio entre las imágenes */
+  margin-top: 50px; /* Espacio arriba de las imágenes */
+  flex-wrap: wrap; /* Hace que las imágenes se ajusten en pantallas más pequeñas */
+}
+
+.section-image {
+  width: 600px; /* Tamaño más grande para las imágenes */
+  max-width: 100%; /* Asegura que las imágenes no se desborden */
+  height: auto; /* Mantiene la relación de aspecto */
+  object-fit: cover; /* Asegura que las imágenes se recorten correctamente si no se ajustan */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .section-image {
+    width: 250px; /* Reducir tamaño de las imágenes en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .section-image {
+    width: 100%; /* Hacer las imágenes más grandes en pantallas muy pequeñas */
+  }
+}
 
 
-  <select name="estatus" required>
-    <option value="1">Activo</option>
-    <option value="0">Inactivo</option>
-  </select>
+  </style>
+</head>
+<body>
 
-  <input type="datetime-local" name="lastCon" />
+<section class="respaldo-section">
+  <h2>Limpieza Interna, Respaldos, Actualizaciones y Formateos</h2>
+  <p>¡Cuidamos tu información y optimizamos tu equipo!</p>
+  <div class="image-container">
+    <img src="assets/images/limpieza.png" alt="Limpieza y respaldos" class="section-image">
+    <img src="assets/images/backup.png" alt="Respaldos" class="section-image">
+  </div>
+</section>
 
-  <input type="datetime-local" name="lastSecretChange" />
 
-  <input type="number" name="secretChange" placeholder="Secret Change" />
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Tu Empresa. Todos los derechos reservados.</p>
+      <div class="social-icons">
+        <a href="#" class="social-icon">Facebook</a>
+        <a href="#" class="social-icon">Twitter</a>
+        <a href="#" class="social-icon">Instagram</a>
+      </div>
+    </div>
+  </footer>
 
-  <input type="number" name="secretPolicy" placeholder="Secret Policy" />
-
-  <button type="submit" style="background-color: #2563eb; color: white; padding: 0.5rem 1rem; border-radius: 0.375rem;">
-    Crear Usuario
-  </button>
-
-</form>
+</body>
+</html>
