@@ -4,6 +4,9 @@ import { DragonballPageComponent } from './pages/dragonball/dragonball-page.comp
 import { CounterHomeComponent } from './pages/counter/counter-home.component';
 import { CounterHeroComponent } from './pages/counter/counter-hero.component';
 import { DragonballSuperPageComponent } from './pages/dragonball-super/dragonball-super-page.component';
+import { CounterMovilComponent } from './pages/counter/counter-movil.component';
+import { CounterDesarrolloComponent } from './pages/counter/counter-desarrollo.component';
+
 
 export const routes: Routes = [
 {
@@ -28,6 +31,14 @@ export const routes: Routes = [
 {
   path: 'usuarios',
   component: CreateUserComponent
+},
+{
+  path: 'movil',
+  component: CounterMovilComponent
+},
+{
+  path: 'desarrollo',
+  component: CounterDesarrolloComponent
 }
 
 ];
