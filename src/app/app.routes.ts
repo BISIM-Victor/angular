@@ -15,29 +15,29 @@ export const routes: Routes = [
 
 },
 {
-  path: 'hero',
+  path: 'mantenimiento',
   component: CounterHeroComponent
 },
 
 {
-  path: 'dragonball',
+  path: 'cableado-estructurado',
   component:DragonballPageComponent
 },
 {
-  path: 'dragonball-super',
+  path: 'circuito-cerrado',
   component:DragonballSuperPageComponent
 
 },
 {
-  path: 'usuarios',
+  path: 'limpieza-respaldos',
   component: CreateUserComponent
 },
 {
-  path: 'movil',
+  path: 'reparacion-movil',
   component: CounterMovilComponent
 },
 {
-  path: 'desarrollo',
+  path: 'desarrollo-software',
   component: CounterDesarrolloComponent
 }
 
